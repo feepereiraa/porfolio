@@ -87,6 +87,14 @@
     a:hover {
       text-decoration: underline;
     }
+
+    .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1.5rem;
+    }
+
+
   </style>
 </head>
 
@@ -150,7 +158,7 @@
     <section>
       <h2>Featured Projects</h2>
         <!-- projeto 1 -->
-        <div class="project" style="position: relative;">
+        <div class="project-grid" style="position: relative;">
         <h3>Standardization of Data Environment with Cloud-Based ELT Pipeline</h3>
         <p>With the goal of standardizing and documenting General Shopping’s data environment, I was responsible for implementing an ELT pipeline. The project used a PostgreSQL database, DBT (Data Build Tool) for data transformations, and Apache Airflow for batch orchestration. The entire infrastructure was deployed in Oracle Cloud Infrastructure, designed to run 24/7.</p>
         <ul>
@@ -183,7 +191,7 @@
         </div>      
 
        <!-- projeto 2 -->
-      <div class="project" style="position: relative;">
+      <div class="project-grid" style="position: relative;">
         <h3>Customer Base Unification Project</h3>
         <p>Using Python, SQL, and Apache Airflow, I developed an ETL pipeline that integrates eight different customer data sources from General Shopping. The pipeline performs deduplication and data enrichment, preparing the unified dataset for strategic use by the company’s CRM. Out of approximately 5 million records, the final deduplicated base contained around 2.3 million unique individuals. This enabled the identification of consumption patterns, persona creation, and a stronger customer relationship strategy.</p>
         <ul>
@@ -210,7 +218,7 @@
       </div>
 
        <!-- projeto 3 -->
-      <div class="project" style="position: relative;">
+      <div class="project-grid" style="position: relative;">
         <h3>Cloud Infrastructure Management on OCI</h3>
         <p>I was responsible for setting up the company’s foundational cloud infrastructure, including compute instances, storage buckets, databases, and user accounts. I also configured the virtual network (VPC), subnets, firewall rules (ACLs), and routing policies, in addition to managing access control across services. This work ensured a secure, organized, and scalable environment for cloud-based data projects.</p>
         <ul>
@@ -230,7 +238,7 @@
       </div>
 
        <!-- projeto 4 -->
-      <div class="project" style="position: relative;">
+      <div class="project-grid" style="position: relative;">
         <h3>CI/CD Automation for Data Projects</h3>
         <p>I implemented a CI/CD framework to automate the deployment of dbt models into production, using GitHub Actions with a self-hosted runner on a VM within Oracle Cloud. This pipeline standardized the validation, testing, and deployment process, improving both agility and reliability. The solution also empowered the data team with greater control over versioning and the deployment flow of new tables.</p>
         <ul>
@@ -256,7 +264,7 @@
       </div>
 
       <!-- projeto 5 -->
-      <div class="project" style="position: relative;">
+      <div class="project-grid" style="position: relative;">
         <h3>Centralization and Standardization of SAP Data</h3>
         <p>To centralize and standardize data from SAP, I defined the strategic reports to be extracted, modeled their structure into MySQL tables, and configured the continuous data ingestion process. This initiative ensured greater consistency, accessibility, and organization of information for both analytical and operational use.</p>
         <ul>
@@ -279,7 +287,7 @@
       </div>
 
       <!-- projeto 6 -->
-    <div class="project" style="position: relative;">
+    <div class="project-grid" style="position: relative;">
       <h3>Automated Processing of Credit Reports for BI Analysis</h3>
       <p>I developed an automated process for extracting, cleaning, and consolidating financial data from Serasa and SCR PDF reports. Using Python, Tabula, and Pandas, I structured the processing of hundreds of documents, identifying clients and guarantors based on text similarity. The pipeline handles raw data, transforms financial variables, and aggregates information by contract, resulting in an enriched analytical dataset. These final datasets were used to build Power BI dashboards with indicators related to delinquency, debt exposure, and negative credit history for both clients and guarantors.</p>
       <ul>
