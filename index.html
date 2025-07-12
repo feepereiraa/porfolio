@@ -132,25 +132,61 @@
 
     <section>
       <h2>Featured Projects</h2>
-
+        <!-- projeto 1 -->
       <div class="project">
-        <h3>Data Warehouse with DBT + Airbyte</h3>
-        <p>Designed a full-stack DW using local data integration with Airbyte, structured processing layers (landing, staging, mart) in PostgreSQL, and version control via dbt CLI/Cloud.</p>
+        <h3>Standardization of the Data Environment with Cloud-Based ELT Pipeline</h3>
+        <p>With the goal of standardizing and documenting General Shopping’s data environment, I was responsible for implementing an ELT pipeline. The project used a PostgreSQL database, DBT (Data Build Tool) for data transformations, and Apache Airflow for batch orchestration. The entire infrastructure was deployed in Oracle Cloud Infrastructure, designed to run 24/7.</p>
+        <ul>
+          <li>PostgreSQL</li>
+          <li>DBT (Data Build Tool)</li>
+          <li>Apache Airflow</li>
+          <li>Oracle Cloud Infrastructure (OCI)</li>
+        </ul>
       </div>
 
+       <!-- projeto 2 -->
       <div class="project">
-        <h3>Visitor Forecasting with XGBoost</h3>
-        <p>Time series model using XGBoost to forecast shopping mall foot traffic with MAPE < 9%, leveraging temporal, holiday, and weather-based features.</p>
+        <h3>Customer Base Unification Project</h3>
+        <p>Using Python, SQL, and Apache Airflow, I developed an ETL pipeline that integrates eight different customer data sources from General Shopping. The pipeline performs deduplication and data enrichment, preparing the unified dataset for strategic use by the company’s CRM. Out of approximately 5 million records, the final deduplicated base contained around 2.3 million unique individuals. This enabled the identification of consumption patterns, persona creation, and a stronger customer relationship strategy.</p>
+        <ul>
+          <li>Python</li>
+          <li>SQL</li>
+          <li>Apache Airflow</li>
+        </ul>
       </div>
 
+       <!-- projeto 3 -->
       <div class="project">
-        <h3>Power BI Dashboard with Year-over-Year KPIs</h3>
-        <p>Built dashboards for dynamic KPI visualization over three years, including field parameters for user-driven metric selection.</p>
+        <h3>Cloud Infrastructure Management on OCI</h3>
+        <p>I was responsible for setting up the company’s foundational cloud infrastructure, including compute instances, storage buckets, databases, and user accounts. I also configured the virtual network (VPC), subnets, firewall rules (ACLs), and routing policies, in addition to managing access control across services. This work ensured a secure, organized, and scalable environment for cloud-based data projects.</p>
+        <ul>
+          <li>Oracle Cloud Infrastructure (OCI)</li>
+          <li>Compute Instances (VMs)</li>
+          <li>Object Storage (buckets)</li>
+          <li>MySQL / PostgreSQL (databases)</li>
+          <li>VCN, Subnets, ACLs, Route Tables</li>
+          <li>IAM (access management)</li>
+        </ul>
       </div>
 
+       <!-- projeto 4 -->
       <div class="project">
-        <h3>Store Classification using Machine Learning</h3>
-        <p>Developed ML models to classify retail stores using SAP data and ABRASCE retail taxonomy.</p>
+        <h3>CI/CD Automation for Data Projects</h3>
+        <p>I implemented a CI/CD framework to automate the deployment of dbt models into production, using GitHub Actions with a self-hosted runner on a VM within Oracle Cloud. This pipeline standardized the validation, testing, and deployment process, improving both agility and reliability. The solution also empowered the data team with greater control over versioning and the deployment flow of new tables.</p>
+        <ul>
+          <li>Git</li>
+          <li>GitHub Actions</li>
+        </ul>
+      </div>
+
+      <!-- projeto 5 -->
+      <div class="project">
+        <h3>Centralization and Standardization of SAP Data</h3>
+        <p>To centralize and standardize data from SAP, I defined the strategic reports to be extracted, modeled their structure into MySQL tables, and configured the continuous data ingestion process. This initiative ensured greater consistency, accessibility, and organization of information for both analytical and operational use..</p>
+        <ul>
+          <li>SAP</li>
+          <li>MySQL</li>
+        </ul>
       </div>
 
     </section>
