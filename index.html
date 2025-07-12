@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Felipe Pereira | Engenheiro de Dados</title>
+  <title>Felipe Pereira | Data Engineer</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
   <style>
     body {
@@ -15,28 +15,45 @@
     }
 
     header {
-      background-color: #1877f2;
+      background-color: #287dd5;
       color: white;
       padding: 2rem 1rem;
-      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
     }
 
-    header img {
+    .profile-container {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    .profile-container img {
       border-radius: 50%;
-      width: 150px;
-      height: 150px;
+      width: 130px;
+      height: 130px;
       object-fit: cover;
-      border: 5px solid white;
-      margin-bottom: 1rem;
+      border: 4px solid white;
     }
 
-    h1 {
-      margin: 0.5rem 0;
-      font-size: 2rem;
+    .profile-info h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+
+    .profile-info p {
+      margin: 0.3rem 0;
+      font-size: 1rem;
+    }
+
+    .badge-img {
+      width: 100px;
     }
 
     h2 {
-      color: #1877f2;
+      color: #287dd5;
     }
 
     main {
@@ -49,21 +66,12 @@
       margin-bottom: 2rem;
     }
 
-    .badge-img {
-      width: 120px;
-      margin-top: 1rem;
-    }
-
     .project {
       border: 1px solid #ddd;
       padding: 1rem;
       border-radius: 8px;
-      margin-bottom: 1rem;
       background-color: white;
-    }
-
-    .project h3 {
-      margin-top: 0;
+      margin-bottom: 1rem;
     }
 
     footer {
@@ -73,7 +81,7 @@
     }
 
     a {
-      color: #1877f2;
+      color: #287dd5;
       text-decoration: none;
     }
 
@@ -85,49 +93,71 @@
 
 <body>
   <header>
-    <!-- Substitua com a URL da imagem do seu perfil -->
-    <img src="profile-image.png" alt="Foto de Perfil de Felipe Pereira" />
-    <h1>Felipe Pereira</h1>
-    <p>Engenheiro de Dados | Especialista em Integração de Sistemas e Modelagem de Dados</p>
-    <!-- Substitua com a URL do badge da AWS -->
-    <img src="aws-badge.png" alt="AWS Cloud Practitioner Badge" class="badge-img" />
+    <div class="profile-container">
+      <img src="profile-image.png" alt="Felipe Pereira Profile Photo" />
+      <div class="profile-info">
+        <h1>Felipe Pereira</h1>
+        <p>Data Engineer | Data-Driven Systems & Analytics Specialist</p>
+      </div>
+    </div>
+    <img src="aws_cloud_practitioner_badger.png" alt="AWS Cloud Practitioner Badge" class="badge-img" />
   </header>
 
   <main>
     <section>
-      <h2>Sobre mim</h2>
+      <h2>About Me</h2>
       <p>
-        Sou Engenheiro de Dados com experiência na implementação de pipelines de dados, integrações com bancos relacionais e não-relacionais, uso de ferramentas como Airflow, DBT, PostgreSQL e AWS. Tenho foco em entregar soluções escaláveis, seguras e bem documentadas para tomada de decisão baseada em dados.
+        Industrial Engineer specialized in Data Engineering and Analytics, with a strong focus on building scalable, data-driven, and solution-oriented systems.
+      </p>
+      <p>
+        Currently working as a Data Analyst at General Shopping & Outlets, where I take on responsibilities typically associated with Data Engineering, including:
+        <ul>
+          <li>Designing and implementing robust data pipelines;</li>
+          <li>Building and maintaining ETL/ELT processes;</li>
+          <li>Administering relational databases (PostgreSQL and MySQL);</li>
+          <li>Optimizing queries and ensuring performance efficiency.</li>
+        </ul>
+      </p>
+      <p>
+        I also contribute to Data Analytics and Business Intelligence initiatives by:
+        <ul>
+          <li>Developing interactive dashboards and executive reports;</li>
+          <li>Performing exploratory and diagnostic data analysis;</li>
+          <li>Supporting data-driven decision making across departments.</li>
+        </ul>
+      </p>
+      <p>
+        In addition, I bring prior experience in the banking and beverage manufacturing industries, which broadens my business perspective and strengthens my adaptability across diverse environments.
       </p>
     </section>
 
     <section>
-      <h2>Projetos em Destaque</h2>
+      <h2>Featured Projects</h2>
 
       <div class="project">
-        <h3>Data Warehouse com DBT + Airbyte</h3>
-        <p>Criação de um DW completo com integração local de dados via Airbyte, processamento em camadas (landing, staging, mart) no PostgreSQL, e controle de versão com dbt cloud/CLI.</p>
+        <h3>Data Warehouse with DBT + Airbyte</h3>
+        <p>Designed a full-stack DW using local data integration with Airbyte, structured processing layers (landing, staging, mart) in PostgreSQL, and version control via dbt CLI/Cloud.</p>
       </div>
 
       <div class="project">
-        <h3>Previsão de Fluxo com XGBoost</h3>
-        <p>Modelo de séries temporais com XGBoost para previsão de fluxo de visitantes em empreendimentos, com MAPE abaixo de 9%, usando feature engineering temporal, clima e feriados.</p>
+        <h3>Visitor Forecasting with XGBoost</h3>
+        <p>Time series model using XGBoost to forecast shopping mall foot traffic with MAPE < 9%, leveraging temporal, holiday, and weather-based features.</p>
       </div>
 
       <div class="project">
-        <h3>Dashboard Power BI com Análise Trienal</h3>
-        <p>Desenvolvimento de dashboards com variação mensal de KPIs em 3 anos, utilizando parâmetros dinâmicos para seleção de medidas.</p>
+        <h3>Power BI Dashboard with Year-over-Year KPIs</h3>
+        <p>Built dashboards for dynamic KPI visualization over three years, including field parameters for user-driven metric selection.</p>
       </div>
 
       <div class="project">
-        <h3>Classificação de Lojas com Machine Learning</h3>
-        <p>Uso de machine learning para categorização automática de lojas com base em dados do SAP e padrões ABRASCE.</p>
+        <h3>Store Classification using Machine Learning</h3>
+        <p>Developed ML models to classify retail stores using SAP data and ABRASCE retail taxonomy.</p>
       </div>
 
     </section>
 
     <section>
-      <h2>Contato</h2>
+      <h2>Contact</h2>
       <p>Email: <a href="mailto:felipe.pereira@generalshopping.com.br">felipe.pereira@generalshopping.com.br</a></p>
       <p>LinkedIn: <a href="https://www.linkedin.com/in/seu-perfil" target="_blank">linkedin.com/in/seu-perfil</a></p>
       <p>GitHub: <a href="https://github.com/seu-usuario" target="_blank">github.com/seu-usuario</a></p>
@@ -135,7 +165,7 @@
   </main>
 
   <footer>
-    <p>Desenvolvido com &hearts; por Felipe Pereira</p>
+    <p>Developed with ♥ by Felipe Pereira</p>
   </footer>
 </body>
 
