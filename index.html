@@ -150,7 +150,7 @@
     <section>
       <h2>Featured Projects</h2>
         <!-- projeto 1 -->
-      <div class="project">
+        <div class="project" style="position: relative;">
         <h3>Standardization of Data Environment with Cloud-Based ELT Pipeline</h3>
         <p>With the goal of standardizing and documenting General Shopping’s data environment, I was responsible for implementing an ELT pipeline. The project used a PostgreSQL database, DBT (Data Build Tool) for data transformations, and Apache Airflow for batch orchestration. The entire infrastructure was deployed in Oracle Cloud Infrastructure, designed to run 24/7.</p>
         <ul>
@@ -170,7 +170,17 @@
             <img src="images/linux.png" alt="Linux" title="Linux" style="height:40px; vertical-align:middle;">
         </li>
         </ul>
-      </div>
+        <!-- Complexity rating -->
+        <div style="position: absolute; top: 16px; right: 16px; display: flex; align-items: center; gap: 4px;">
+            <!-- 4 full circles -->
+            <span style="width:18px;height:18px;display:inline-block;border-radius:50%;background:#005bae;border:1px solid #ccc;"></span>
+            <span style="width:18px;height:18px;display:inline-block;border-radius:50%;background:#005bae;border:1px solid #ccc;"></span>
+            <span style="width:18px;height:18px;display:inline-block;border-radius:50%;background:#005bae;border:1px solid #ccc;"></span>
+            <span style="width:18px;height:18px;display:inline-block;border-radius:50%;background:#005bae;border:1px solid #ccc;"></span>
+            <!-- half circle -->
+            <span style="width:18px;height:18px;display:inline-block;border-radius:50%;background:linear-gradient(to right,#005bae 50%,#fff 50%);border:1px solid #ccc;"></span>
+        </div>
+        </div>      
 
        <!-- projeto 2 -->
       <div class="project">
