@@ -1,10 +1,142 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Meu Site</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Felipe Pereira | Engenheiro de Dados</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+
+    header {
+      background-color: #1877f2;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header img {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border: 5px solid white;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      margin: 0.5rem 0;
+      font-size: 2rem;
+    }
+
+    h2 {
+      color: #1877f2;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+    .badge-img {
+      width: 120px;
+      margin-top: 1rem;
+    }
+
+    .project {
+      border: 1px solid #ddd;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      background-color: white;
+    }
+
+    .project h3 {
+      margin-top: 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: #e9ecef;
+    }
+
+    a {
+      color: #1877f2;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
+
 <body>
-    <h1>Oi, bem-vindo ao meu site!</h1>
+  <header>
+    <!-- Substitua com a URL da imagem do seu perfil -->
+    <img src="profile-image.png" alt="Foto de Perfil de Felipe Pereira" />
+    <h1>Felipe Pereira</h1>
+    <p>Engenheiro de Dados | Especialista em Integração de Sistemas e Modelagem de Dados</p>
+    <!-- Substitua com a URL do badge da AWS -->
+    <img src="aws-badge.png" alt="AWS Cloud Practitioner Badge" class="badge-img" />
+  </header>
+
+  <main>
+    <section>
+      <h2>Sobre mim</h2>
+      <p>
+        Sou Engenheiro de Dados com experiência na implementação de pipelines de dados, integrações com bancos relacionais e não-relacionais, uso de ferramentas como Airflow, DBT, PostgreSQL e AWS. Tenho foco em entregar soluções escaláveis, seguras e bem documentadas para tomada de decisão baseada em dados.
+      </p>
+    </section>
+
+    <section>
+      <h2>Projetos em Destaque</h2>
+
+      <div class="project">
+        <h3>Data Warehouse com DBT + Airbyte</h3>
+        <p>Criação de um DW completo com integração local de dados via Airbyte, processamento em camadas (landing, staging, mart) no PostgreSQL, e controle de versão com dbt cloud/CLI.</p>
+      </div>
+
+      <div class="project">
+        <h3>Previsão de Fluxo com XGBoost</h3>
+        <p>Modelo de séries temporais com XGBoost para previsão de fluxo de visitantes em empreendimentos, com MAPE abaixo de 9%, usando feature engineering temporal, clima e feriados.</p>
+      </div>
+
+      <div class="project">
+        <h3>Dashboard Power BI com Análise Trienal</h3>
+        <p>Desenvolvimento de dashboards com variação mensal de KPIs em 3 anos, utilizando parâmetros dinâmicos para seleção de medidas.</p>
+      </div>
+
+      <div class="project">
+        <h3>Classificação de Lojas com Machine Learning</h3>
+        <p>Uso de machine learning para categorização automática de lojas com base em dados do SAP e padrões ABRASCE.</p>
+      </div>
+
+    </section>
+
+    <section>
+      <h2>Contato</h2>
+      <p>Email: <a href="mailto:felipe.pereira@generalshopping.com.br">felipe.pereira@generalshopping.com.br</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/seu-perfil" target="_blank">linkedin.com/in/seu-perfil</a></p>
+      <p>GitHub: <a href="https://github.com/seu-usuario" target="_blank">github.com/seu-usuario</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Desenvolvido com &hearts; por Felipe Pereira</p>
+  </footer>
 </body>
+
 </html>
