@@ -95,6 +95,26 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 1.5rem;
     }
+    
+    .about-me-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .tech-icon {
+        height: 40px;
+        vertical-align: middle;
+        background: #334a5e;
+        border-radius: 8px;
+        padding: 8px;
+        box-shadow: 0 0 5px #4b5561;
+        margin-right: 8px;
+    }  
+
+    .branco {
+      color: white;
+    }
 
   </style>
 </head>
@@ -115,73 +135,83 @@
             <h1>Felipe Pereira</h1>
             <p>Data Engineer | Cloud & Analytics Pipeline Architect</p>
             <div style="margin-top: 1rem;">
-                <img src="images/python_02.png" alt="Python" title="Python" style="height:40px; vertical-align:middle;">
-                <img src="images/sql.png" alt="SQL" title="SQL" style="height:40px; vertical-align:middle;">
-                <img src="images/dbt.png" alt="DBT" title="DBT" style="height:40px; vertical-align:middle;">
-                <img src="images/airflow.png" alt="Apache Airflow" title="Apache Airflow" style="height:40px; vertical-align:middle;">
-                <img src="images/git.png" alt="Git" title="Git" style="height:40px; vertical-align:middle;">
-                <img src="images/linux.png" alt="Linux" title="Linux" style="height:40px; vertical-align:middle;">
+                <img src="images/python_02.png" alt="Python" title="Python" class="tech-icon" style="height:37px; vertical-align:middle;">
+                <img src="images/sql.png" alt="SQL" title="SQL" class="tech-icon" style="height:37px; vertical-align:middle;">
+                <img src="images/dbt.png" alt="DBT" title="DBT" class="tech-icon" style="height:37px; vertical-align:middle;">
+                <img src="images/airflow.png" alt="Apache Airflow" title="Apache Airflow" class="tech-icon" style="height:37px; vertical-align:middle;">
+                <img src="images/pbi_02.png" alt="Power BI" title="Power BI" class="tech-icon" style="height:37px; vertical-align:middle;">
+                <img src="images/git.png" alt="Git" title="Git" class="tech-icon" style="height:37px; vertical-align:middle;">
+                <img src="images/linux.png" alt="Linux" title="Linux" class="tech-icon" style="height:37px; vertical-align:middle;">
             </div>
+          </div>
         </div>
-    </div>
-    <img src="images/aws-badge.png" alt="AWS Cloud Practitioner Badge" class="badge-img" style="width: 160px;" />
+        <img src="images/aws-badge.png" alt="AWS Cloud Practitioner Badge" class="badge-img" style="width: 160px;" />
+
+        <!-- seção de contato dentro do header -->
+        <div style="background-color: #4b5561; color: #ffffff; padding: 0.05rem 1rem; margin-top: 0.2rem; border-radius: 8px; font-size: 90%; line-height: 0.9;">
+          <style>
+            div a {
+              color: rgb(210, 223, 248);
+            }
+          </style>
+          
+          <p><strong>Location:</strong> <a href="https://www.google.com/maps/place/Bela+Vista,+S%C3%A3o+Paulo+-+SP/" target="_blank">Bela Vista - São Paulo, SP</a></p>
+          <p><strong>Email:</strong> <a href="mailto:felipealmeidapereira@hotmail.com">felipealmeidapereira@hotmail.com</a></p>
+          <p><strong>Phone:</strong> <a href="tel:+5518998654126">+55 18 99865-4126</a></p>
+          <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/felipe-pereira-90aa471a1/" target="_blank">linkedin.com/in/felipe-pereira-90aa471a1</a></p>
+          <p><strong>GitHub:</strong> <a href="https://github.com/feepereiraa" target="_blank">github.com/feepereiraa</a></p>
+        </div>
+
 </header>
+      
+      <main>
 
-  <main>
     <section>
-    <h2>Contact</h2>
-    <div style="line-height: 0.7; font-size: 80%;">
-      <p>Location: <a href="https://www.google.com/maps/place/Bela+Vista,+S%C3%A3o+Paulo+-+SP/@-23.5620286,-46.6468096,15z/data=!3m1!4b1!4m6!3m5!1s0x94ce59b756463d61:0x9f3d1e6f7f40964!8m2!3d-23.5554048!4d-46.6456426!16s%2Fg%2F1224122h?entry=ttu&g_ep=EgoyMDI1MDcwOS4wIKXMDSoASAFQAw%3D%3D">Bela Vista - São Paulo, SP</a></p>
-      <p>Email: <a href="mailto:felipealmeidapereira@hotmail.com">felipealmeidapereira@hotmail.com</a></p>
-      <p>Phone: <a>+55 18 99865-4126</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/felipe-pereira-90aa471a1/" target="_blank">linkedin.com/in/felipe-pereira-90aa471a1/</a></p>
-      <p>GitHub: <a href="https://github.com/feepereiraa" target="_blank">github.com/feepereiraa</a></p>
-    </div>
+      <!-- # About Me Grid -->
+      <div class="about-me-grid">
+        <div class="project font-size: 90%">
+          <h2>About Me</h2>
+          <p>
+            I’m a data engineer focused on scalable pipelines, process automation, and best practices in data architecture. Throughout my career, I’ve aimed to implement solutions that structure the data environment, providing organization and scalability so that business teams can access high-quality information.
+          </p>  
+          <p>
+            I’m driven by curiosity and a constant pursuit of efficiency. I enjoy learning new tools, applying best practices, and solving problems in a structured and replicable way.
+          </p>
+          <p>  
+            Currently, I work in a production data engineering environment, designing projects with a business-oriented approach. I’m looking for opportunities that challenge my analytical and technical skills.
+          </p>
+        </div>
+
+        <div class="project" style="display: flex; justify-content: space-between; align-items: center; font-size: 90%;">
+          <div>
+            <h2>Education</h2>
+            <img src="images/fiap.jpg" alt="FIAP Logo" style="height: 30px;">
+            <p style="font-size: 120%;">
+              MBA in Data Engineering – FIAP
+            </p>
+            <p style="font-size: 90%; font-style: italic;">
+              May/2025 – Now
+            </p>
+            
+            <div style="border-top: 1px solid #ddd; margin: 1rem 0;"></div>
+            
+            <img src="images/utfpr.png" alt="UTFPR Logo" style="height: 30px;">
+            <p style="font-size: 120%;">
+              Bachelor of Industrial Engineering – Universidade Tecnológica Federal do Paraná (UTFPR)
+            </p>
+            <p style="font-size: 90%; font-style: italic;">
+              Mar/2016 – Jan/2022
+            </p>
+          </div>
+          <div style="display: flex; flex-direction: column; align-items: flex-end; gap: 12px;">
+          </div>
+        </div>
+
+      </div>
     </section>
 
     <section>
-      <h2>About Me</h2>
-      <p>
-        Data Engineer with a strong focus on building scalable, data-driven, and solution-oriented systems.
-      </p>
-      <p>
-        Currently working at General Shopping & Outlets, where I take on responsibilities typically associated with Data Engineering, including:
-        <ul style="margin-top: 0.5rem;">
-          <li>Designing and implementing robust data pipelines;</li>
-          <li>Building and maintaining ETL/ELT processes;</li>
-          <li>Administering relational databases;</li>
-          <li>Optimizing queries and ensuring performance efficiency.</li>
-        </ul>
-      </p>
-      <p>
-        I also contribute to Data Analytics and Business Intelligence initiatives by:
-        <ul style="margin-top: 0.5rem;">
-          <li>Developing interactive dashboards and executive reports;</li>
-          <li>Performing exploratory and diagnostic data analysis;</li>
-          <li>Supporting data-driven decision making across departments.</li>
-        </ul>
-      </p>
-      <p>
-        In addition, I bring prior experience in the banking and beverage manufacturing industries, which broadens my business perspective and strengthens my adaptability across diverse environments.
-      </p>
-    </section>
-
-    <section>
-        <h2>Education</h2>
-        <p>
-            <p style="font-size: 120%;">
-                MBA in Data Engineering - FIAP 
-            </p>
-            <p style="font-size: 90%; font-style: italic;">
-                May/2025 - Now
-            </p>
-            <p style="font-size: 120%;">
-                Bachelor of Industrial Engineering - Universidade Tecnológica Federal do Paraná (UTFPR)
-            </p>
-            <p style="font-size: 90%; font-style: italic;">
-                Mar/2016 - Jan/2022
-            </p>
-        </p>
+        
     </section>
 
     <section>
