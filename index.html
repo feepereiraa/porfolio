@@ -98,6 +98,14 @@
 
   </style>
 </head>
+<script>
+  function toggleImage(button) {
+    const container = button.nextElementSibling;
+    const isVisible = container.style.display === 'block';
+    container.style.display = isVisible ? 'none' : 'block';
+    button.textContent = isVisible ? 'View Architecture Diagram' : 'Hide Diagram';
+  }
+</script>
 
 <body>
 <header>
@@ -105,12 +113,14 @@
         <img src="images/profile-image.png" alt="Felipe Pereira Profile Photo" class="profile-photo" />
         <div class="profile-info">
             <h1>Felipe Pereira</h1>
-            <p>Data Engineer | Data-Driven Systems & Analytics Specialist</p>
+            <p>Data Engineer | Cloud & Analytics Pipeline Architect</p>
             <div style="margin-top: 1rem;">
                 <img src="images/python_02.png" alt="Python" title="Python" style="height:40px; vertical-align:middle;">
                 <img src="images/sql.png" alt="SQL" title="SQL" style="height:40px; vertical-align:middle;">
-                <img src="images/dbt_02.png" alt="DBT" title="DBT" style="height:40px; vertical-align:middle;">
+                <img src="images/dbt.png" alt="DBT" title="DBT" style="height:40px; vertical-align:middle;">
                 <img src="images/airflow.png" alt="Apache Airflow" title="Apache Airflow" style="height:40px; vertical-align:middle;">
+                <img src="images/git.png" alt="Git" title="Git" style="height:40px; vertical-align:middle;">
+                <img src="images/linux.png" alt="Linux" title="Linux" style="height:40px; vertical-align:middle;">
             </div>
         </div>
     </div>
@@ -134,9 +144,9 @@
       <p>
         Data Engineer with a strong focus on building scalable, data-driven, and solution-oriented systems.
       </p>
-      <p style="font-size: 50%;">
+      <p>
         Currently working at General Shopping & Outlets, where I take on responsibilities typically associated with Data Engineering, including:
-        <ul style="margin-top: auto;">
+        <ul style="margin-top: 0.5rem;">
           <li>Designing and implementing robust data pipelines;</li>
           <li>Building and maintaining ETL/ELT processes;</li>
           <li>Administering relational databases;</li>
@@ -145,7 +155,7 @@
       </p>
       <p>
         I also contribute to Data Analytics and Business Intelligence initiatives by:
-        <ul style="margin-top: auto;">
+        <ul style="margin-top: 0.5rem;">
           <li>Developing interactive dashboards and executive reports;</li>
           <li>Performing exploratory and diagnostic data analysis;</li>
           <li>Supporting data-driven decision making across departments.</li>
@@ -159,16 +169,16 @@
     <section>
         <h2>Education</h2>
         <p>
-            <h3>
+            <p style="font-size: 120%;">
                 MBA in Data Engineering - FIAP 
-            </h3>
-            <p style="font-size: 50%;">
-                May/2025 - May/2026
             </p>
-            <h3>
+            <p style="font-size: 90%; font-style: italic;">
+                May/2025 - Now
+            </p>
+            <p style="font-size: 120%;">
                 Bachelor of Industrial Engineering - Universidade Tecnológica Federal do Paraná (UTFPR)
-            </h3>
-            <p style="font-size: 50%;">
+            </p>
+            <p style="font-size: 90%; font-style: italic;">
                 Mar/2016 - Jan/2022
             </p>
         </p>
@@ -179,7 +189,7 @@
         <div class="projects-grid">
         <!-- projeto 1 -->
             <div class="project" style="position: relative;">
-                <h3>Standardization of Data Environment with Cloud-Based ELT Pipeline</h3>
+                <h3>ELT Pipeline on OCI</h3>
                 <!-- Relevance rating -->
                 <div style="margin-top: 8px; display: flex; justify-content: flex-end; gap: 4px;">
                     <span style="font-weight: bold; margin-right: 6px;">Relevance:</span>
@@ -192,7 +202,7 @@
                 </div>
                 <div>
                     <p><strong>📍 Objective</strong><br>
-                    Standardize and document General Shopping’s data environment to ensure consistency, traceability, and reliability in analytics and reporting.</p>
+                    Standardize and document data environment to ensure consistency, traceability, and reliability in analytics and reporting.</p>
 
                     <p><strong>👨‍💻 Role & Responsibilities</strong><br>
                     - Designed and implemented a complete ELT pipeline architecture from scratch;<br>
@@ -201,7 +211,7 @@
                     - Deployed the entire solution on Oracle Cloud Infrastructure (OCI) with 24/7 availability.</p>
 
                     <p><strong>✅ Results</strong><br>
-                    - Enabled centralized, reliable, and scalable data processing;<br>
+                    - Enabled centralized, reliable, and scalable data processing pipelines that power dashboards used by over 50 stakeholders;<br>
                     - Reduced manual intervention through automation;<br>
                     - Laid the groundwork for future analytical and BI initiatives across the company.</p>
                 </div>
@@ -210,7 +220,7 @@
                     <img src="images/postgresql_02.png" alt="PostgreSQL" title="PostgreSQL" style="height:40px; vertical-align:middle;">
                 </li>
                 <li style="display: inline-block; margin-right: 10px;">
-                    <img src="images/dbt_02.png" alt="DBT (Data Build Tool)" title="DBT (Data Build Tool)" style="height:40px; vertical-align:middle;">
+                    <img src="images/dbt.png" alt="DBT (Data Build Tool)" title="DBT (Data Build Tool)" style="height:40px; vertical-align:middle;">
                 </li>
                 <li style="display: inline-block; margin-right: 10px;">
                     <img src="images/airflow.png" alt="Apache Airflow" title="Apache Airflow" style="height:40px; vertical-align:middle;">
@@ -222,11 +232,21 @@
                     <img src="images/linux.png" alt="Linux" title="Linux" style="height:40px; vertical-align:middle;">
                 </li>
                 </ul>
-            </div>      
+                <div style="text-align: center; margin-top: 1rem;">
+                  <button onclick="toggleImage(this)" style="padding: 0.5rem 1.2rem; background-color: #005bae; color: white; border: none; border-radius: 6px; cursor: pointer;">
+                    View Project Diagram
+                  </button>
+
+                  <div class="diagram-container" style="margin-top: 1rem; display: none;">
+                    <img src="images/project_01.png" alt="Data Architecture Diagram"
+                        style="max-width: 95%; max-height: 90vh; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.2);">
+                  </div>
+                </div> 
+            </div>
 
             <!-- projeto 2 -->
             <div class="project" style="position: relative;">
-                <h3>Customer Base Unification Project</h3>
+                <h3>Customer Base Unification</h3>
                 <div style="margin-top: 8px; display: flex; justify-content: flex-end; gap: 4px;">
                     <span style="font-weight: bold; margin-right: 6px;">Relevance:</span>
                     <!-- 4 full circles -->
