@@ -169,7 +169,7 @@
     <section>
       <!-- # About Me Grid -->
       <div class="about-me-grid">
-        <div class="project font-size: 90%">
+        <div class="project" style= "justify-content: space-between; display: flex; font-size: 100%; margin-top: 0; padding-top: 8px; margin-top: 0; padding-top: 8px;">
           <h2>About Me</h2>
           <p>
             I’m a data engineer focused on scalable pipelines, process automation, and best practices in data architecture. Throughout my career, I’ve aimed to implement solutions that structure the data environment, providing organization and scalability so that business teams can access high-quality information.
@@ -182,10 +182,10 @@
           </p>
         </div>
 
-        <div class="project" style="display: flex; justify-content: space-between; align-items: center; font-size: 90%;">
+        <div class="project" style="display: flex; margin-top: 0; padding-top: 8px; justify-content: space-between; align-items: center; font-size: 90%;">
           <div>
             <h2>Education</h2>
-            <img src="images/fiap.jpg" alt="FIAP Logo" style="height: 30px;">
+            <img src="images/fiap.jpg" alt="FIAP Logo" style="height: 25px;">
             <p style="font-size: 120%;">
               MBA in Data Engineering – FIAP
             </p>
@@ -195,7 +195,7 @@
             
             <div style="border-top: 1px solid #ddd; margin: 1rem 0;"></div>
             
-            <img src="images/utfpr.png" alt="UTFPR Logo" style="height: 30px;">
+            <img src="images/utfpr.png" alt="UTFPR Logo" style="height: 25px;">
             <p style="font-size: 120%;">
               Bachelor of Industrial Engineering – Universidade Tecnológica Federal do Paraná (UTFPR)
             </p>
@@ -317,7 +317,7 @@
 
             <!-- projeto 3 -->
             <div class="project" style="position: relative;">
-                <h3>CI/CD Automation for Data Projects</h3>
+                <h3>CI/CD Automation for DBT Project</h3>
                 <div style="margin-top: 8px; display: flex; justify-content: flex-end; gap: 4px;">
                     <span style="font-weight: bold; margin-right: 6px;">Relevance:</span>
                     <!-- 3,5     full circles -->
@@ -329,18 +329,19 @@
                 </div>
                 <div>
                     <p><strong>📍 Objective</strong><br>
-                    Automate the deployment process of dbt models to improve reliability, reduce manual effort, and ensure consistency in production releases.</p>
+                    Establish a robust CI/CD workflow to validate, test, and deploy dbt models with consistency and traceability across production environments.</p>
 
                     <p><strong>👨‍💻 Role & Responsibilities</strong><br>
-                    - Designed and implemented a CI/CD framework tailored for dbt deployments;<br>
-                    - Configured GitHub Actions with a self-hosted runner on a VM within Oracle Cloud;<br>
-                    - Defined steps for validation, testing, and deployment to standardize the workflow;<br>
-                    - Collaborated with the data team to facilitate adoption and scalability of the pipeline.</p>
+                    - Designed a CI/CD pipeline using GitHub Actions integrated with a self-hosted runner on OCI instance;<br>
+                    - Implemented stages for dbt deps, dbt seed, dbt run, and dbt test, ensuring build reproducibility;<br>
+                    - Added schema validation, linting, and model testing steps to catch issues pre-deployment;<br>
+                    - Structured the workflow for modularity, supporting multiple environments (dev, staging, prod) and branching strategies;<br>
+                    - Documented and onboarded the data team to the pipeline, fostering maintainability and adoption.</p>
 
                     <p><strong>✅ Results</strong><br>
-                    - Streamlined and automated the release cycle of dbt models into production;<br>
-                    - Improved agility and reduced human error during deployments;<br>
-                    - Enabled version control and better visibility over the implementation flow of new tables.</p>
+                    - Achieved automated, version-controlled deployments of dbt models with minimal manual intervention;<br>
+                    - Reduced release errors and improved test coverage via standardized pre-merge checks;<br>
+                    - Enabled visibility into model changes and deployment status through CI/CD logs and GitHub environments.</p>
                 </div>
                 <ul style="margin-top: auto;">
                 <li style="display: inline-block; margin-right: 10px;">
